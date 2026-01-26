@@ -1,8 +1,11 @@
-const App = () => {
+import Input from "./components/Input";
 
+const App = () => {
   return (
-    <p className="bg-red-600">Olá, caique.</p>
-  )
-}
+    <p className="bg-black p-6">
+      <Input />
+    </p>
+  );
+};
 
 export default App;
