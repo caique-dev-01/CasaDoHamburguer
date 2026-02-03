@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "../components/Input";
+import { Link } from "react-router";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -31,6 +32,13 @@ const Login = () => {
         <button className="w-full cursor-pointer rounded-md bg-[#C92A0E] py-2 text-sm text-white">
           Login
         </button>
+
+        <Link
+          to="/register"
+          className="block w-full rounded-md bg-[#C92A0E] py-2 text-center text-sm text-white"
+        >
+          Registrar-se
+        </Link>
       </div>
     </form>
   );
