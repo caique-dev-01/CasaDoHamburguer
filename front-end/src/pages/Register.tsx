@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "../components/Input";
+import Button from "../components/button";
 
 const Register = () => {
   const [nome, setName] = useState("");
@@ -51,9 +52,8 @@ const Register = () => {
           onChange={(e) => setCep(e.target.value)}
         />
 
-        <button className="w-full cursor-pointer rounded-md bg-[#C92A0E] py-2 text-sm text-white">
-          Login
-        </button>
+        <Button title={"Criar conta"} variant="default" />
+        <Button title={"Já tenho uma conta"} variant="outline" />
       </div>
     </form>
   );
