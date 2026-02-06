@@ -31,7 +31,9 @@ const Login = () => {
         />
 
         <Button title="Login" variant="default" />
-        <Button title="Não tenho uma conta" variant="outline" />
+        <Link to="/register" className="w-full">
+          <Button title="Não tenho uma conta" variant="outline" />
+        </Link>
       </div>
     </form>
   );

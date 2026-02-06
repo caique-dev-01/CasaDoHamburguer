@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Input from "../components/Input";
 import Button from "../components/button";
+import { Link } from "react-router";
 
 const Register = () => {
   const [nome, setName] = useState("");
@@ -53,7 +54,10 @@ const Register = () => {
         />
 
         <Button title={"Criar conta"} variant="default" />
-        <Button title={"Já tenho uma conta"} variant="outline" />
+
+        <Link to="/login" className="w-full">
+          <Button title={"Já tenho uma conta"} variant="outline" />
+        </Link>
       </div>
     </form>
   );

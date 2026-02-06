@@ -9,7 +9,7 @@ import Pedidos from "./pages/Pedidos";
 // Ele define a estrutura comum que será reutilizada entre as páginas
 const Layout = () => {
   return (
-    <div className="flex min-h-screen flex-col bg-red-500">
+    <div className="flex min-h-screen flex-col bg-[#161410]">
       {/* Cabeçalho fixo exibido em todas as páginas que utilizam este layout */}
       <Header />
 
